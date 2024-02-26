@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic HTML Form</title>
+  </head>
+  <body>
+    <form action="">
+      <!-- Form Elements Goes here -->
+
+      <!-- Text Input -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter Your Name" />
+      <br />
+      <!-- Password Input -->
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter Your Password"
+      />
+      <br />
+      <!-- Radio Buttons -->
+      <label>Check Your Prefferred Payment Method:</label> <br />
+      <input type="radio" id="credit" name="payment" value="credit" />
+      <label for="credit">Credit Card</label> <br />
+      <input type="radio" id="debit" name="payment" value="debit" />
+      <label for="debit">Debit Card</label> <br />
+      <input type="radio" id="paypal" name="payment" value="paypal" />
+      <label for="paypal">Paypal</label> <br />
+      <input type="radio" id="bitcoin" name="payment" value="bitcoin" />
+      <label for="bitcoin">Bitcoin</label>
+
+      <br />
+      <!-- Checkboxes -->
+      <label>Interests:</label> <br />
+      <input type="checkbox" id="coding" name="interest" value="coding" />
+      <label for="coding">Coding</label> <br />
+      <input type="checkbox" id="reading" name="interest" value="reading" />
+      <label for="reading">Reading</label> <br />
+      <input type="checkbox" id="gaming" name="interest" value="gaming" />
+      <label for="gaming">Gaming</label> <br />
+      <input type="checkbox" id="cooking" name="interest" value="cooking" />
+      <label for="cooking">Cooking</label>
+      <br />
+      <!-- Submit Button     -->
+      <button type="submit">Submit</button>
+
+      <!-- ARIA Roles and Attributes -->
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter Your Name"
+        aria-label="Name"
+      />
+      <br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter Your Password"
+        aria-label="Password"
+        aria-describedby="password-help"
+      />
+      <br />
+      <div id="password-help">
+        <p>Your password must be at least 8 characters long.</p>
+      </div>
+    </form>
+    <!-- Fieldset and Legend -->
+    <form action="">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter Your Name"
+        />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter Your Email"
+        />
+        <br />
+        <label for="phone">Phone:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter Your Phone"
+        />
+        <br />
+      </fieldset>
+    </form>
+  </body>
+</html>
